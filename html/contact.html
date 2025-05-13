@@ -1,0 +1,49 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact - Firaol</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me via the following methods:</p>
+      <ul>
+        <li>Email: <a href="mailto:firaolbaneta99@gmail.com">firaolbaneta99@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/firaol81" target="_blank" rel="noopener noreferrer">Firaol81 LinkedIn</a></li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Firaol | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Load Navbar from a separate HTML file
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
++

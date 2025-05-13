@@ -1,0 +1,43 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>About Me - Firaol</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Firaol, a passionate web developer with a background in computer programming. I love to build creative and responsive websites. I also have experience in multimedia production and video editing. Check out my work and get in touch!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Firaol | All Rights Reserved</p>
+  </footer>
+
+   <script>
+        // Load Navbar from a separate HTML file
+        fetch('Nav/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

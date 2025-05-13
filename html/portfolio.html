@@ -1,0 +1,49 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio - Firaol</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>FNB Studio</h2>
+      <p>Explore my FNB Studio project, where I showcase the detailed overview and my design process. The project was initially created on Google Slides and can be viewed below.</p>
+
+      <div class="pdf-viewer">
+        <object data="Project/FNB Library.pdf" type="application/pdf" width="100%" height="80vh">
+          <p>Your browser does not support PDFs. <a href="FNB Library.pdf">Open PDF</a>.</p>
+        </object>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Firaol | All Rights Reserved</p>
+  </footer>
+
+   <script>
+        // Load Navbar from a separate HTML file
+        fetch('Nav/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
