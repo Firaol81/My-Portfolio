@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Firaol Baneta | Portfolio</title>
+
+</head>
+<nav>
+  <div class="nav-container">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container">
+    <div id="navbar-placeholder"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I am a passionate web developer, content creator, and designer.</p>
+      <a href="portfolio.html" class="cta-button">Explore My Projects</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Firaol | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Load Navbar from a separate HTML file
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
